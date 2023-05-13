@@ -1,0 +1,95 @@
+.modal{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    .form{
+        overflow-y: auto;
+        height: 95dvh;
+        background-image: linear-gradient(45deg, #BA65F6 10%, #ecb39e 80%);
+        width: 50%;
+        padding: 2rem;
+        cursor: auto;
+        .buttons{
+            display: flex;
+            justify-content: space-around;
+            button{
+                margin: 5% 2rem;
+                padding: 0.75rem 2rem;
+                border: none;
+                border-radius: 3px;
+                color: white;
+                box-shadow: 5px 3px 10px rgba(0, 0, 0, 0.3);
+            }
+            .sub{
+                background-color: #4CAF50;
+            }
+            .sub:hover{
+                background-color: #48a04b;
+            }
+            .can{
+                background-color: #f44336;
+            }
+            .can:hover{
+                background-color: #e43f33;
+            }
+        }
+        .modalTop{
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+        .inputText{
+            margin: 0.5rem;
+            margin-bottom: 2rem;
+            input{
+                width: 100%;
+                background-color: rgb(231, 226, 226);
+                box-sizing: border-box;
+                margin-top: 1rem;
+                padding: 0.75rem;
+                display: inline-block;
+                border: none;
+                border-radius: 4px;
+                border-bottom: 1px solid rgb(170, 168, 168);
+                box-shadow: 5px 3px 10px rgba(0, 0, 0, 0.3);
+            }
+        }
+        .modalBottom{
+            display: flex;
+            justify-content: space-around;
+            .inputRad{
+                padding: 1rem;
+                div{
+                    margin: 1.5rem 1rem;
+                    label{
+                        cursor: pointer;
+                        margin-left: 0.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 610px){
+    .form{
+        min-width: 75%;
+    }
+    .modalBottom{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 400px){
+    .buttons {
+        button{
+            padding: 0.5rem 1rem !important;
+        }
+    }
+}

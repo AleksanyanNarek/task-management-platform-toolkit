@@ -1,0 +1,30 @@
+.taskCard{
+    background-color: white;
+    border-radius: 5px;
+    margin: 0.5rem;
+    padding: 1rem;
+    box-shadow: 5px 3px 10px rgba(0, 0, 0, 0.3);
+    .top{
+        margin-bottom: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        span{
+            text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+        }
+        span:hover{
+            text-shadow: 2px 1px 3px rgba(0, 0, 0, 0.3);
+        }
+    }
+
+    .bottom{
+        margin-top: 1rem;
+        display: flex;
+        justify-content: space-between;
+        img{
+            width: 1rem;
+            cursor: pointer;
+        }
+    }
+}
